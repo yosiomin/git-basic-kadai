@@ -1,17 +1,21 @@
+yoshiokamiho@Mac git_kadai % mkdir git_challenge 
 yoshiokamiho@Mac git_kadai % cd git_challenge
 yoshiokamiho@Mac git_challenge % git init
-Reinitialized existing Git repository in /Users/yoshiokamiho/git_kadai/git_challenge/.git/
-yoshiokamiho@Mac git_challenge % touch hello_world.txt
+Initialized empty Git repository in /Users/yoshiokamiho/git_kadai/git_challenge/.git/
+yoshiokamiho@Mac git_challenge % echo "Hello, world" >> hello_world.txt
 yoshiokamiho@Mac git_challenge % git add hello_world.txt
 yoshiokamiho@Mac git_challenge % git commit -m "hello_world.txtを追加"
-[main (root-commit) 932edcb] hello_world.txtを追加
+[main (root-commit) 96e0d7c] hello_world.txtを追加
  1 file changed, 1 insertion(+)
  create mode 100644 hello_world.txt
+yoshiokamiho@Mac git_challenge % echo "こんにちは、世界！" >> hello_world.txt 
 yoshiokamiho@Mac git_challenge % git add hello_world.txt
 yoshiokamiho@Mac git_challenge % git commit -m "日本語訳を追記"
-[main b89d257] 日本語訳を追記
- 1 file changed, 2 insertions(+), 1 deletion(-)
+[main f9be776] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+yoshiokamiho@Mac git_challenge % cat hello_world.txt
+Hello, world
+こんにちは、世界！
 yoshiokamiho@Mac git_challenge % git log --oneline
-b89d257 (HEAD -> main) 日本語訳を追記
-932edcb hello_world.txtを追加
-yoshiokamiho@Mac git_challenge % 
+f9be776 (HEAD -> main) 日本語訳を追記
+96e0d7c hello_world.txtを追加
